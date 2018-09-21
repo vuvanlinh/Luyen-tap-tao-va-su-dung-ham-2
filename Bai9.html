@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [1, 2, 3, 'a', 'a', 'b', 'c'];
+    let char = 'a';
+    f(char, array);
+
+    function f(char, arr) {
+        let count = 0;
+        let a = true;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === char) {
+                count++
+            }
+            else if (arr[i] !== char) {
+                a = false;
+            }
+        }
+        alert("so lan xuat hien cua " + char + ' la ' + count)
+    }
+
+</script>
+</body>
+</html>

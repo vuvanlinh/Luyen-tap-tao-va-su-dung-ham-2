@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhap vao mot ki tu");
+    isNguyenAm(input);
+
+    function isNguyenAm(str) {
+        if (str.length > 1) {
+            alert("Nhap vao mot ki tu thoi ban oi");
+        } else {
+            let regex = /[aeiouAEIOU]/;
+            if (regex.test(str)) {
+                alert(str + " la nguyen am")
+            } else alert(str + " khong la nguyen am")
+        }
+
+    }
+
+</script>
+</body>
+</html>

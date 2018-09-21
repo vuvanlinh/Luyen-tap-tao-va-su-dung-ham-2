@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = parseInt(prompt("Nhap so can tinh giai thua "));
+    tinhgiaithua(input);
+
+    function tinhgiaithua(num) {
+        let result = num;
+        if (num === 0 || num === 1) {
+            alert("Giai thua la : 1");
+        } else {
+            while (num > 1) {
+                num--;
+                result *= num;
+            }
+            alert("Giai thua la " + result);
+        }
+
+
+    }
+</script>
+</body>
+</html>

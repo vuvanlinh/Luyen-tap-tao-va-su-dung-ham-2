@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhap vao so thu nhat : "));
+    let b = parseInt(prompt("Nhap vao so thu hai : "));
+    let c = parseInt(prompt("Nhap vao so thu ba : "));
+    findMin(a, b, c);
+
+    function findMin(a, b, c) {
+        let min = a;
+        if (a <= b && a <= c) {
+            min = a;
+            alert("So nho nhat la : " + min);
+        }
+        else if (b <= a && b <= c) {
+            min = b;
+            alert("So nho nhat la : " + min);
+        }
+        else if (c <= a && c <= b) {
+            min = c;
+            alert("So nho nhat la : " + min);
+        }
+    }
+</script>
+</body>
+</html>

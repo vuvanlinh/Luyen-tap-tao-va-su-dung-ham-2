@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("Nhap vao mot ki tu : ");
+    checkNumber(input)
+
+    function checkNumber(num) {
+        let laso = false;
+        if (num >= 0 || num < 0) {
+            laso = true;
+        }
+        if (laso) {
+            alert("Ki tu nhap vao la so")
+        } else alert("Ki tu nhap vao KHONG la so")
+    }
+</script>
+</body>
+</html>
